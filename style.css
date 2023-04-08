@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Anonymous+Pro&display=swap");
+
+:root {
+  font-family: "Anonymous Pro", monospace;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(94, 92, 92, 0.82);
+  background: #232526; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #414345,
+    #232526
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #414345,
+    #232526
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-color: #ffffff;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+.letter.blink {
+  animation: blink 3s infinite;
+}
+
+#app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+    color: white;
+  }
+
+  50% {
+    opacity: 0.8;
+    color: #ffffffb0;
+  }
+
+  60% {
+    opacity: 0.6;
+    color: #ffffff87;
+  }
+
+  100% {
+    opacity: 0;
+    color: rgba(22, 22, 22, 0.12);
+  }
+}
