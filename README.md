@@ -1,1 +1,1 @@
-# matrix-terminal-animation In Vannila JS
+# matrix-terminal-animation
