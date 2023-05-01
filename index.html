@@ -2,14 +2,43 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Matrix Terminal Animation</title>
+    <title>Music Player</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div id="app">
-        
+    <h1>Music Player</h1>
+
+    <h4 class="song_title"></h4>
+    <h5 class="song_time">00:00</h5>
+    <div class="song_status">
+      <div class="bar"></div>
     </div>
-    <script type="module" src="/main.js"></script>
+
+    <div class="container">
+      <audio id="audio">
+        <source src="" type="audio/mpeg" />
+      </audio>
+
+      <div class="controls">
+        <img
+          id="prev"
+          src="./assets/icons/rewind-button.png"
+          alt=""
+          width="20px"
+        />
+        <img id="play" src="./assets/icons/play.png" alt="" width="20px" />
+
+        <img
+          id="next"
+          src="./assets/icons/fast-forward.png"
+          alt=""
+          width="20px"
+        />
+      </div>
+    </div>
+
+    <script src="script.js"></script>
   </body>
 </html>

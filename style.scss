@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa&display=swap");
+
+$font-family: "Comfortaa", cursive;
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: $font-family;
+  background: #3a6186; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #89253e,
+    #3a6186
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #89253e,
+    #3a6186
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: whitesmoke;
+
+  button {
+    outline: none;
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    font-family: $font-family;
+  }
+
+  .song_status {
+    height: 5px;
+    width: 200px;
+    background: #3a6186;
+    margin-bottom: 10px;
+
+    .bar {
+      height: 5px;
+      width: 0%;
+      background: whitesmoke;
+    }
+  }
+
+  .controls {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+}
